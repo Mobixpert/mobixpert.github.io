@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobixpert Studio</title>
+<meta name="description" content="Studio independant de packs visuels pour Android. Pixel art original, distribue sur le Google Play Store.">
+<link rel="icon" type="image/png" href="/assets/pixel-pack-16bit/icon.png">
+<style>
+  :root {
+    --bg: #14101F;
+    --surface: #1E1830;
+    --outline: #2F2548;
+    --text: #EFE9FF;
+    --dim: #9A8FC0;
+    --accent: #FFD23F;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--bg); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 80px 24px 60px; }
+
+  header { margin-bottom: 64px; text-align: center; }
+  h1 {
+    font-size: 2.4em;
+    margin-bottom: 14px;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .tagline {
+    font-size: 1.05em;
+    color: var(--dim);
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  section { margin-bottom: 56px; }
+  h2 {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+  h3 { font-size: 1.15em; margin-bottom: 6px; font-weight: 600; }
+  p { color: var(--text); }
+  p + p { margin-top: 12px; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--outline);
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .pack {
+    display: flex;
+    gap: 22px;
+    align-items: flex-start;
+  }
+  .pack-icon {
+    width: 88px;
+    height: 88px;
+    border-radius: 18px;
+    flex-shrink: 0;
+    background: var(--bg);
+    object-fit: cover;
+    image-rendering: pixelated;
+  }
+  .pack-body { flex: 1; min-width: 0; }
+  .pack-desc {
+    color: var(--dim);
+    font-size: 0.95em;
+    margin-top: 4px;
+    margin-bottom: 14px;
+  }
+  .badge {
+    display: inline-block;
+    background: var(--outline);
+    color: var(--dim);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.78em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .badge.live { background: var(--accent); color: var(--bg); }
+
+  .links { margin-top: 14px; font-size: 0.93em; }
+  .links a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 18px;
+  }
+  .links a:hover { text-decoration: underline; }
+
+  .about p { color: var(--dim); }
+  .about strong { color: var(--text); font-weight: 600; }
+
+  .contact { font-size: 1.0em; }
+  .contact a { color: var(--accent); text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+
+  footer {
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid var(--outline);
+    color: var(--dim);
+    font-size: 0.85em;
+  }
+  footer a { color: var(--dim); margin: 0 8px; }
+
+  @media (max-width: 540px) {
+    main { padding: 56px 20px 40px; }
+    h1 { font-size: 1.9em; }
+    .pack { flex-direction: column; align-items: center; text-align: center; }
+    .pack-icon { width: 96px; height: 96px; }
+    .links a { display: inline-block; margin: 4px 8px; }
+  }
+</style>
+</head>
+<body>
+
+<main>
+
+<header>
+  <h1>Mobixpert Studio</h1>
+  <p class="tagline">
+    Studio independant de packs visuels pour Android. Pixel art original, dessine a la main, distribue sur le Google Play Store.
+  </p>
+</header>
+
+<section>
+  <h2>Produits</h2>
+  <div class="card pack">
+    <img src="/assets/pixel-pack-16bit/icon.png" alt="Pixel Pack 16-bit" class="pack-icon">
+    <div class="pack-body">
+      <h3>Pixel Pack 16-bit</h3>
+      <p class="pack-desc">
+        1000+ icones pixel art retro-gaming, style SNES et Megadrive. Compatible Nova, Lawnchair, Niagara, Smart Launcher et la plupart des launchers Android.
+      </p>
+      <span class="badge">Bientot sur le Play Store</span>
+      <div class="links">
+        <a href="/privacy/pixel-pack-16bit/">Confidentialite</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>Approche</h2>
+  <p>
+    <strong>Pixel art original, jamais de logo copie.</strong> Chaque icone est dessinee specialement pour evoquer le type d'app (musique, finance, transport, jeu) sans reproduire le logo officiel de la marque. C'est un parti pris artistique et juridique.
+  </p>
+  <p>
+    <strong>Fait pour durer.</strong> Les packs recoivent des mises a jour regulieres : nouvelles icones, support de nouvelles apps, ajustements visuels. Tu peux demander une icone manquante directement depuis l'app, elle sera ajoutee dans la version suivante.
+  </p>
+  <p>
+    <strong>Anti-piracy responsable.</strong> Les achats sont verifies via Google Play Integrity. Les utilisateurs legitimes ont une experience sans friction. Aucune donnee personnelle n'est collectee ni revendue.
+  </p>
+</section>
+
+<section class="contact">
+  <h2>Contact</h2>
+  <p>
+    Question, retour, demande commerciale :<br>
+    <a href="mailto:mobixpert.sas+iconpacksstudio@gmail.com">mobixpert.sas+iconpacksstudio@gmail.com</a>
+  </p>
+</section>
+
+<footer>
+  <p>Copyright 2026 Mobixpert Studio. Tous droits reserves.</p>
+  <p>
+    <a href="/privacy/pixel-pack-16bit/">Politique de confidentialite</a>
+  </p>
+</footer>
+
+</main>
+
+</body>
+</html>
