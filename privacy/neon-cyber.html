@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Neon Cyber</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         max-width: 720px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #1a1a1a; }
+  h1 { font-size: 1.6em; margin-bottom: 4px; }
+  h2 { font-size: 1.2em; margin-top: 2em; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+  h3 { font-size: 1.0em; margin-top: 1.4em; }
+  .meta { color: #666; font-size: 0.9em; margin-bottom: 2em; }
+  .lang-switch { text-align: right; font-size: 0.9em; margin-bottom: 1em; }
+  .lang-switch a { color: #0066cc; text-decoration: none; margin-left: 10px; }
+  hr.lang-sep { border: 0; border-top: 2px solid #1a1a1a; margin: 4em 0 2em; }
+  code { background: #f4f4f4; padding: 1px 6px; border-radius: 3px; font-size: 0.9em; }
+  ul { padding-left: 1.4em; }
+  li { margin-bottom: 0.4em; }
+  a { color: #0066cc; }
+</style>
+</head>
+<body>
+
+<div class="lang-switch">
+  <a href="#fr">Francais</a> | <a href="#en">English</a>
+</div>
+
+<section id="fr">
+<h1>Politique de confidentialite - Neon Cyber</h1>
+<p class="meta">Editeur : Mobixpert Studio - Derniere mise a jour : 6 juin 2026</p>
+
+<p>Resume : Neon Cyber (verre depoli blanc et pastels lumineux) est un icon pack payant. L'app
+ne collecte aucune donnee personnelle, aucune donnee n'est envoyee a un serveur
+tiers a des fins commerciales ou publicitaires, et aucun cookie ni tracker
+n'est utilise.</p>
+
+<h2>1. Donnees lues sur l'appareil</h2>
+
+<h3>1.1 Liste des applications installees</h3>
+<p>L'app utilise la permission Android <code>QUERY_ALL_PACKAGES</code> pour
+lire la liste des applications installees sur ton appareil. Cette liste est
+utilisee localement, en memoire, pour calculer le compteur affiche dans
+l'ecran d'accueil ("X % de tes apps installees sont themees par le pack").
+<strong>Cette liste ne quitte jamais ton appareil</strong> : elle n'est pas
+stockee, pas transmise, pas envoyee a Mobixpert Studio ni a aucun tiers.</p>
+
+<h3>1.2 Informations techniques de l'appareil</h3>
+<p>L'app peut lire des informations techniques standard fournies par Android
+(modele d'appareil, version du systeme) pour adapter son affichage. Ces
+informations restent sur l'appareil sauf dans le cas decrit en section 2.2
+(mail de support).</p>
+
+<h2>2. Donnees envoyees hors de l'appareil</h2>
+
+<h3>2.1 Verification d'achat via Google Play Integrity</h3>
+<p>Au lancement de l'app, un token signe par Google Play Services est envoye
+a un serveur de verification (Worker Cloudflare heberge par Mobixpert Studio,
+endpoint <code>https://iconpacks-integrity-verify.mobixpert.workers.dev</code>).
+Ce token est utilise uniquement pour verifier que l'app a bien ete achetee
+depuis le Google Play Store par le compte Google de l'utilisateur. Le serveur :</p>
+<ul>
+  <li>Ne stocke pas le token apres traitement.</li>
+  <li>Ne stocke pas l'identite de l'utilisateur (le token ne contient pas
+      d'email ni d'identifiant publicitaire).</li>
+  <li>Ne conserve aucun log persistant des requetes.</li>
+  <li>Renvoie au client uniquement une reponse booleenne (achat verifie : oui
+      ou non).</li>
+</ul>
+<p>Le resultat est mis en cache localement pour 14 jours afin de permettre
+l'usage de l'app hors connexion.</p>
+
+<h3>2.2 Mail de support volontaire</h3>
+<p>L'ecran "Demander une app" du pack ouvre l'app mail par defaut de
+l'utilisateur, avec un message pre-rempli contenant : le nom de l'app
+demandee, son identifiant package (si fourni), un commentaire optionnel, le
+modele de l'appareil et la version Android. <strong>L'envoi est entierement a
+l'initiative de l'utilisateur</strong>. Si le mail est envoye, son contenu
+arrive a l'adresse de support de Mobixpert Studio et n'est utilise que pour
+ajouter l'app demandee dans une prochaine version du pack.</p>
+
+<h2>3. Tiers techniques</h2>
+<p>L'app communique avec les services tiers suivants, dans les conditions
+decrites ci-dessus :</p>
+<ul>
+  <li><strong>Google Play Services</strong> : pour generer le token Play
+      Integrity. Voir la politique de confidentialite Google.</li>
+  <li><strong>Google Play Store</strong> : pour l'achat, la facturation et
+      les mises a jour. Voir la politique du Google Play Store.</li>
+  <li><strong>Cloudflare Workers</strong> : pour heberger le serveur de
+      verification d'achat. Aucune donnee personnelle ne transite.</li>
+</ul>
+
+<h2>4. Publicite et analytics</h2>
+<p>L'app ne contient aucune publicite. Aucun SDK d'analytics (Firebase,
+Google Analytics, Adjust, AppsFlyer, ou autre) n'est integre.</p>
+
+<h2>5. Mineurs</h2>
+<p>L'app est destinee a un public general (classification PEGI 3). Elle ne
+collecte aucune donnee personnelle, donc aucune disposition specifique
+relative aux mineurs n'est requise au sens du RGPD ou du COPPA.</p>
+
+<h2>6. Conservation et suppression</h2>
+<p>L'app ne collecte aucune donnee a conserver. Le cache local du verdict
+d'achat est efface en desinstallant l'app ou via Reglages Android &gt; Apps
+&gt; Neon Cyber &gt; Stockage &gt; Effacer les donnees.</p>
+
+<h2>7. Modifications de cette politique</h2>
+<p>En cas de modification, la date de derniere mise a jour en haut de cette
+page sera changee. Pour les changements substantiels, une notification sera
+faite dans la description de l'app sur le Google Play Store.</p>
+
+<h2>8. Contact</h2>
+<p>Pour toute question : <a href="mailto:mobixpert.sas+iconpacksstudio@gmail.com">mobixpert.sas+iconpacksstudio@gmail.com</a></p>
+
+</section>
+
+<hr class="lang-sep">
+
+<section id="en">
+<h1>Privacy Policy - Neon Cyber</h1>
+<p class="meta">Publisher: Mobixpert Studio - Last updated: June 6, 2026</p>
+
+<p>Summary: Neon Cyber (verre depoli blanc et pastels lumineux) is a paid icon pack. The app
+collects no personal data, no data is sent to a third-party server for
+commercial or advertising purposes, and no cookies or trackers are used.</p>
+
+<h2>1. Data read on the device</h2>
+
+<h3>1.1 List of installed applications</h3>
+<p>The app uses the Android <code>QUERY_ALL_PACKAGES</code> permission to
+read the list of applications installed on your device. This list is used
+locally, in memory, to compute the counter shown on the home screen ("X% of
+your installed apps are themed by the pack"). <strong>This list never leaves
+your device</strong>: it is not stored, not transmitted, not sent to
+Mobixpert Studio or to any third party.</p>
+
+<h3>1.2 Device technical information</h3>
+<p>The app may read standard technical information provided by Android
+(device model, system version) to adapt its display. This information stays
+on the device except in the case described in section 2.2 (support email).</p>
+
+<h2>2. Data sent outside the device</h2>
+
+<h3>2.1 Purchase verification via Google Play Integrity</h3>
+<p>When the app starts, a token signed by Google Play Services is sent to a
+verification server (Cloudflare Worker hosted by Mobixpert Studio, endpoint
+<code>https://iconpacks-integrity-verify.mobixpert.workers.dev</code>). This
+token is used solely to verify that the app was actually purchased from the
+Google Play Store by the user's Google account. The server:</p>
+<ul>
+  <li>Does not store the token after processing.</li>
+  <li>Does not store the user identity (the token does not contain an email
+      or advertising ID).</li>
+  <li>Does not retain any persistent log of requests.</li>
+  <li>Returns to the client only a boolean response (purchase verified: yes
+      or no).</li>
+</ul>
+<p>The result is cached locally for 14 days to allow offline use of the app.</p>
+
+<h3>2.2 Voluntary support email</h3>
+<p>The "Request an app" screen of the pack opens the user's default mail app
+with a pre-filled message containing: the name of the requested app, its
+package identifier (if provided), an optional note, the device model, and
+the Android version. <strong>Sending the email is entirely at the user's
+initiative</strong>. If the email is sent, its content reaches the Mobixpert
+Studio support address and is used only to add the requested app to a future
+version of the pack.</p>
+
+<h2>3. Technical third parties</h2>
+<p>The app communicates with the following third-party services, under the
+conditions described above:</p>
+<ul>
+  <li><strong>Google Play Services</strong>: to generate the Play Integrity
+      token. See the Google privacy policy.</li>
+  <li><strong>Google Play Store</strong>: for purchase, billing, and updates.
+      See the Google Play Store policy.</li>
+  <li><strong>Cloudflare Workers</strong>: to host the purchase verification
+      server. No personal data transits through it.</li>
+</ul>
+
+<h2>4. Advertising and analytics</h2>
+<p>The app contains no advertising. No analytics SDK (Firebase, Google
+Analytics, Adjust, AppsFlyer, or other) is integrated.</p>
+
+<h2>5. Minors</h2>
+<p>The app is intended for a general audience (PEGI 3 rating). It collects
+no personal data, so no specific provisions regarding minors are required
+under the GDPR or COPPA.</p>
+
+<h2>6. Retention and deletion</h2>
+<p>The app collects no data to retain. The local cache of the purchase
+verdict is cleared by uninstalling the app or via Android Settings &gt; Apps
+&gt; Neon Cyber &gt; Storage &gt; Clear data.</p>
+
+<h2>7. Changes to this policy</h2>
+<p>In case of changes, the last-updated date at the top of this page will be
+changed. For substantial changes, a notice will be posted in the app
+description on the Google Play Store.</p>
+
+<h2>8. Contact</h2>
+<p>For any question: <a href="mailto:mobixpert.sas+iconpacksstudio@gmail.com">mobixpert.sas+iconpacksstudio@gmail.com</a></p>
+
+</section>
+
+</body>
+</html>
